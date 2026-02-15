@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+
+    /* border:solid;
+    width:50% */
+
+    text-decoration: red line-through;
+    letter-spacing: 10px;
+
+    
+}
+
+p{
+
+    font-weight:bold;
+  line-height:2.5;
+
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,16 @@
+div{
+
+    height:200px;
+    width:200px;
+    background-color: rgb(136, 200, 41);
+
+    border:2px solid black;
+
+    margin:5px;
+
+    display:inline-block;
+}
+
+#third{
+    display:none;
+}

@@ -1,0 +1,214 @@
+
+/* universal selector */
+
+*{
+
+    font-family: "Courier New";
+}
+
+
+
+/* element selector  */
+
+
+
+/* h3{
+    color:red;
+} */
+
+
+
+h3,
+h1{
+    color: #B10813;
+}
+
+
+
+
+
+
+/* id selector */
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #B10813;
+    color:white;
+
+}
+
+
+
+
+/* class selector */
+
+.upvote{
+    background-color:green;
+    color:white;
+}
+
+
+
+
+
+/* decendent selector */
+
+
+
+ div p{
+   color:rgb(76, 0, 255);
+}
+
+
+
+/* p a{
+
+    color:#B10813;
+    background-color: yellow;
+} */
+
+
+.abc a{
+    color:red;
+    background-color: yellow;;
+}
+
+/* we can skip ul and li as it is decendent selector we can go in multiple level  */
+
+/* so can write nav a skipping ul li  */
+
+/* but cant do nav > a using child combinator as it can go directly one level down not multiple  */
+
+/* hence we will use decendent selector in place of child combinator its advantage */
+
+
+nav ul li a{ 
+    color:red;
+    
+}
+
+
+
+/* attribute selector */
+
+input[type="text"]{
+
+    color: red;
+
+}
+
+input[type="password"]{
+    color: red;
+}
+
+
+input[type]{
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sibling combinator */
+
+
+p + h3{
+
+    text-decoration : underline ; 
+}
+
+.upvote + button{
+    background-color: rgb(77, 77, 137);
+}
+
+
+
+
+
+
+/* child combinator input child of div directly one level down */
+
+div >input{
+    background-color: rgb(168, 226, 43);
+}
+
+
+
+
+
+/* pseudo class */
+
+button:hover{
+    color:white;
+    background-color: black;
+}
+
+
+h3:hover{
+
+    text-decoration:overline;
+}
+
+
+button:active{
+
+    color:black;
+    background-color: pink;
+}
+
+
+p:active{
+
+    font-weight:bold;
+    color:green;
+   
+}
+
+
+input[type="radio"]:checked + label{
+
+    color:red;
+    font-size: bold;
+}
+
+div:nth-of-type(2n){
+
+    background-color:greenyellow;
+}
+
+h1::first-letter{
+    color:black;
+}
+
+p::first-line{
+
+    color:blueviolet
+    
+
+}
+
+p::selection{
+
+    background-color: lawngreen;
+}
+
+h3{
+    background-color: yellow;
+}
+
+h3{
+    background-color: blue;
+}
